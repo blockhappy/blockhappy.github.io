@@ -4,27 +4,6 @@
 		<title>github block happy</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
-		<script src="https://www.jqueryscript.net/demo/Instagram-Photos-Without-API-instagramFeed/jquery.instagramFeed.js"></script>
-		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-		<script>
- (function($){
-		$(window).on('load', function(){
-			$.instagramFeed({
-				'username': 'feelblockhappy',
-				'container': "#instagram-feed-demo",
-				'display_profile': true,
-				'display_biography': true,
-				'display_gallery': true,
-				'get_raw_json': false,
-				'callback': null,
-				'styling': true,
-				'items': 36,
-				'items_per_row': 6,
-				'margin': 0.3
-			});
-		});
-	})(jQuery);
-  </script>
 	</head>
 	<body>
 		<nav>
@@ -44,6 +23,26 @@
 		<div id="instagram-feed-demo" class="instagram_feed"></div>
 		<br></br>
 		</div><!-- /.container -->
+		<script src="https://www.jqueryscript.net/demo/Instagram-Photos-Without-API-instagramFeed/jquery.instagramFeed.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script> (function($){
+		$(window).on('load', function(){
+			$.instagramFeed({
+				'username': 'feelblockhappy',
+				'container': "#instagram-feed-demo",
+				'display_profile': true,
+				'display_biography': true,
+				'display_gallery': true,
+				'get_raw_json': false,
+				'callback': null,
+				'styling': true,
+				'items': 36,
+				'items_per_row': 6,
+				'margin': 0.3
+			});
+		});
+	})(jQuery);
+  </script>
 		<footer>
     		<ul>
         		<li><a href="https://github.com/blockhappy">github.com/blockhappy</a></li>
